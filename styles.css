@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 20rem;
+}
+
 body {
     line-height: 1.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -13,13 +17,13 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background-color: rgb(155, 93, 173)
+    /* height: 100vh; */
+    background-color: rgb(155, 93, 173);
 }
 
 .main-nav {
     width: 100vw;
-    background-color: rgb(39, 38, 38);
+    background-color: rgb(155, 93, 173);
     display: flex;
     justify-content: end;
     position: fixed;
@@ -31,7 +35,7 @@ body {
     padding: 2rem 3rem;
 }
 
-#navbar a {
+.a {
     margin: 0 1rem;
     text-decoration: none;
     color: bisque;
@@ -47,11 +51,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20rem;
 }
 
 #welcome-section{
+    background-color: rgb(39, 38, 38);
+    width: 100vw;
     height: 100vh;
+    padding-top: 30rem;
+    margin-bottom: 12rem;
 }
 
 #welcome-section h1 {
@@ -65,14 +72,85 @@ body {
     color: bisque;
     font-size: 23px;
     margin: 1rem;
+    text-align: center;
 }
 
+#projects {
+    height: 100vh;
+    margin-bottom: 15rem;
+}
+
+#projects h1 {
+    font-size: 1.4rem;
+    margin: -13rem 0 2rem 0;
+    background-color: rgb(39, 38, 38);
+    padding: 2rem;
+    text-align: center;
+    color: rgb(212, 162, 212);
+}
+.line {
+    height: 1rem;
+    border-bottom: 2px solid rgb(39, 38, 38);
+}
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background-color: rgb(212, 162, 212);
+    border: 2px solid rgb(39, 38, 38);
+    margin: 1rem;
+}
+
+.img {
+    width: 100%;
+    height: 20rem;
+}
+
+
+#profiles {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+}
+
+.profile-info h1 {
+    text-align: center;
+    color: rgb(212, 162, 212);
+    margin-bottom: 2rem;
+}
+.profile-info {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 4rem;
+    margin: 4rem 0 0 0;
+}
+.git-hub, .twitter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    padding: 2rem;
+}
 .pajamas--github {
     display: inline-block;
     width: 1em;
     height: 1em;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584c.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076c-.343-.93-.881-1.175-.881-1.175c-.734-.489.048-.489.048-.489c.783.049 1.224.832 1.224.832c.734 1.223 1.859.88 2.3.685c.048-.538.293-.88.489-1.076c-1.762-.196-3.621-.881-3.621-3.964c0-.88.293-1.566.832-2.153c-.05-.147-.343-.978.098-2.055c0 0 .685-.196 2.201.832c.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832c.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915c.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.98 7.98 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0' clip-rule='evenodd'/%3E%3C/svg%3E");
-    background-color: currentColor;
+    background-color: rgb(212, 162, 212);
     -webkit-mask-image: var(--svg);
     mask-image: var(--svg);
     -webkit-mask-repeat: no-repeat;
@@ -86,7 +164,7 @@ body {
     width: 1em;
     height: 1em;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23000' d='M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4m3.905 7.864c.004.082.005.164.005.244c0 2.5-1.901 5.381-5.379 5.381a5.335 5.335 0 0 1-2.898-.85c.147.018.298.025.451.025c.886 0 1.701-.301 2.348-.809a1.895 1.895 0 0 1-1.766-1.312a1.9 1.9 0 0 0 .853-.033a1.892 1.892 0 0 1-1.517-1.854v-.023c.255.141.547.227.857.237a1.89 1.89 0 0 1-.585-2.526a5.376 5.376 0 0 0 3.897 1.977a1.891 1.891 0 0 1 3.222-1.725a3.797 3.797 0 0 0 1.2-.459a1.9 1.9 0 0 1-.831 1.047a3.799 3.799 0 0 0 1.086-.299a3.834 3.834 0 0 1-.943.979'/%3E%3C/svg%3E");
-    background-color: currentColor;
+    background-color: rgb(212, 162, 212);
     -webkit-mask-image: var(--svg);
     mask-image: var(--svg);
     -webkit-mask-repeat: no-repeat;
@@ -95,12 +173,8 @@ body {
     mask-size: 100% 100%;
 }
 
-@media (min-width:300px) {
-    .entire-page {
-        background-color: rgb(0, 26, 255);
-    }
-
-    #welcome-section p {
-        text-align: center;
+@media (min-width: 700px) {
+    .project-tile {
+        flex-direction: row;
     }
 }
