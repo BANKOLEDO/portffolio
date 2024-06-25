@@ -1,3 +1,3 @@
 # A Simple Portfolio
 
-Still Building
+[page preview](https://bankoledo.github.io/portfolio/)
