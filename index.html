@@ -8,19 +8,111 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="entire-page">
+    <main class="entire-page">
         <header class="main-nav">
+            <h1 class="logo">My<span class="codes-text">Logo</span></h1>
+            <img src="./images/icon-hamburger.svg" alt="hamburger-menu-img" class="hamburger-menu" id="open-menu">
+        <div id="overlay" class="overlay"></div> 
             <div id="navbar">
-                <a href="#welcome-section" class="a">Home</a>
-                <a href="#projects" class="a">My Projects</a>
-                <a href="#profiles" class="a">Contact</a>
+                <img src="./images/icon-close-menu.svg" alt="close-img" class="close-menu" id="close-menu" style="display: none;">
+                <a href="#welcome-section" class="navbar-links">Home</a>
+                <a href="#about" class="navbar-links">About</a>
+                <a href="#projects" class="navbar-links">My Projects</a>
+                <a href="#profiles" class="navbar-links">Contact</a>
             </div>
         </header>
-        <div id="main-content">
+        <section id="main-content">
             <div id="welcome-section">
-                <h1>Hello World!</h1>
-                <p>My name is Bankole David,I am a web developer.</p>
+                <div class="greeting-card">
+                    <img src="https://img.icons8.com/?size=100&id=23028&format=png&color=000000" alt="html-icon1" class="html-icon1">
+                    <img src="https://img.icons8.com/?size=100&id=38272&format=png&color=000000" alt="css-icon-1" class="css-icon1">
+                    <h1 class="greeting-text">Hello World!</h1>
+                    <div class="hr-1"></div>
+                <p class="name">I'm <span class="my-name">Bankole David</span></p>
+                <p class="tech-role">Frontend Web Developer</p>
+                <img src="https://img.icons8.com/?size=100&id=11260&format=png&color=000000" alt="source-code-icon1" class="source-code-icon1 mt-1">
+                <div class="greeting-buttons">
+                    <button id="hire-me" class="button-pb"><a href="#">Hire Me</a></button>
+                    <button id="download-cv" class="button-pb ml-1"><a href="#">Download CV</a></button>
+                </div>
+                <img src="https://img.icons8.com/?size=100&id=39854&format=png&color=000000" alt="js-icon" class="js-icon">
+                </div>
+                <div class="illustration-card"></div>
+                    <img src="./images/coding-illustration.png" alt="coding-avatar" class="coding-avatar">
+                </div>
             </div>
+            <!-- about-me -->
+            <div id="about">
+                <h1 class="about-me-text">About <span class="me">Me</span></h1>
+                <div class="hr-2"></div>
+                <div class="flex-direction-row">
+                    <section class="profile-about-me-card">
+                        <div class="my-profile-card"></div>
+                        <div class="about-me-card margin-2">
+                        <p class="about-paragraph">
+                            I am a beginner-level frontend developer with a strong focus on building functional, dynamic, and visually appealing web applications using HTML, CSS, and JavaScript. With a passion for creating seamless digital experiences, I aim to deliver solutions that solve real-world problems while ensuring clients achieve their desired results.
+                        </p>
+                        <h1 class="wica-heading">I can help you create a website with:</h1>
+                        <ul class="wica-list list-none">
+                            <li><span class="span-1">Cross-browser compatibility</span>, ensuring consistent experience across platforms.</li>
+                            <li><span class="span-1">Clean, maintainable code</span>, following best practices in web development.</li>
+                            <li><span class="span-1">Optimized web performance</span>, ensuring fast load times and smooth interactions.</li>
+                            <li><span class="span-1">Pixel-perfect, responsive UI designs</span> that adapt smoothly across devices.</li>
+                            <li><span class="span-1">Interactive and user-friendly interfaces</span>, enhancing user engagement.</li>
+                            <li><span class="span-1">Seamless integration of dynamic features</span> such as modals, forms, and validation.</li>
+                        </ul>
+                        <p class="about-paragraph">
+                            Driven by a passion for innovation and client satisfaction, I am committed to developing websites that bring ideas to life.
+                        </p>
+                        </div>
+                    </section>
+                    <div class="skills-stack">
+                        <section class="cps-card margin-2">
+                            <button class="cps-heading">Skills</button>
+                            <ul class="skills-list list-none">
+                                <li><span class="bold">Responsive and Mobile-First Design: </span>Developing applications that deliver a seamless experience across varying screen sizes and resolutions.</li>
+                                <li><span class="bold">Version Control (Git): </span>Having Expertise in managing code changes, collaborating with development teams, and maintaining project history through Git.</li>
+                                <li> <span class="bold">Cross-Browser Compatibility: </span>Ensuring consistent functionality and user experience across different web browsers.</li>
+                                <li><span class="bold">Performance Optimization: </span>Implementing strategies to optimize web performance, ensuring fast and efficient application performance for users.</li>
+                            </ul>
+                        </section>
+                        <section class="my-tech-stack-card margin-2">
+                            <h1 class="tech-stack-heading">Tech Stack</h1>
+                            <ul class="tech-stack-list list-none">
+                                <li class="html-card">
+                                    <img src="https://img.icons8.com/?size=100&id=23028&format=png&color=000000" alt="html-icon2" class="html-icon2">
+                                    <div class="coml-hp">
+                                        <h1 class="coml-heading html">HTML5</h1>
+                                        <p class="coml-text">Structures web content with new semantic elements and supports modern multimedia.</p>
+                                    </div>
+                                </li>
+                                <li class="css-card">
+                                    <img src="https://img.icons8.com/?size=100&id=38272&format=png&color=000000" alt="css-icon2" class="css-icon2">
+                                    <div class="coml-hp">
+                                        <h1 class="coml-heading css">CSS3</h1>
+                                        <p class="coml-text">Styles web pages with features like transitions, animations, and responsive design.</p>
+                                    </div>
+                                </li>
+                                <li class="js-card">
+                                    <img src="https://img.icons8.com/?size=100&id=39854&format=png&color=000000" alt="js-icon2" class="js-icon2">
+                                    <div class="coml-hp">
+                                        <h1 class="coml-heading js">JavaScript</h1>
+                                        <p class="coml-text">Adds interactivity and dynamic features to websites.</p>
+                                    </div>
+                                </li>
+                                <li class="md-card">
+                                    <img src="https://img.icons8.com/?size=100&id=21827&format=png&color=000000" alt="md-icon2" class="md-icon2">
+                                    <div class="coml-hp">
+                                        <h1 class="coml-heading md">MarkDown</h1>
+                                        <p class="coml-text">A simple markup language for formatting text, used in documentation and writing.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>
+                    </section>    
+                </div>
+            </div>
+            <!-- my-projects -->
             <div id="projects">
                 <h1>These are some of my projects</h1>
                 <div class="line"></div>
@@ -53,7 +145,8 @@
                         </div>
                     </div>
             </div>
-        </div>
+        </>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
