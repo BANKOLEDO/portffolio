@@ -42,19 +42,16 @@ body {
 }
 
 #open-menu {
-    position: fixed;
-    width: 1.2rem;
-    margin-top: 1.2rem;
-    top: 0;
-    left: 80%;
+    margin-right: 3.2rem;
+    width: 1.5rem;
 }
 
 #close-menu {
     position: absolute;
-    width: 1.2rem;
+    width: 1.5rem;
     margin-top: 0.3rem; 
     top: 0;
-    left: 35%;
+    left: 32%;
     z-index: 1001;
 }
 
@@ -481,46 +478,18 @@ body {
     .main-nav {
         min-width: 24rem;
     }
-
-    #open-menu {
-        left: 21rem;
-    }
-
-    #close-menu {
-        top: 0.2rem;
-        left: 7rem;
-    }
-
     .about-me-card {
         width: 20rem;
     }
 }
 
 @media (max-width: 428px) {
-    #open-menu {
-        left: 24rem;
-    }
-
-    #close-menu {
-        top: 0.2rem;
-        left: 9rem;
-    }
-
     .about-me-card {
         max-width: 22rem;
     }
 }
 
-@media (max-width: 700px) {
-    #open-menu {
-        left: 28.3rem;
-    }
-
-    #close-menu {
-        top: 0.2rem;
-        left: 9.6rem;
-    }
-
+@media (max-width: 300px) {
     .greeting-card, .coding-avatar , .about-me-card {
         margin-bottom: 1rem;
         width: 26rem;
@@ -538,14 +507,6 @@ body {
 
 
 @media (max-width: 320px) { 
-    #close-menu {
-        left: 5rem;
-    }
-
-    #open-menu {
-        left: 18rem;
-    }
-
     .main-nav {
         min-width: 22.9rem;
     }
