@@ -49,10 +49,8 @@ body {
 #close-menu {
     position: absolute;
     width: 1.5rem;
-    margin-top: 0.3rem; 
-    top: 0;
-    left: 32%;
-    z-index: 1001;
+    top: 0.3rem;
+    left: 5.1rem;
 }
 
 .overlay {
@@ -73,7 +71,7 @@ body {
     flex-direction: column;
     position: relative;
     top: 3.8rem;
-    left: 28%;
+    left: 22%;
     margin: 3rem auto 0 auto;
     width: 20rem;
     height: 13rem;
@@ -81,8 +79,6 @@ body {
     background-color: var(--white);
     z-index: 1000; 
 }
-
-
 /* #navbar {
     display: flex;
     align-items: center;
@@ -242,7 +238,7 @@ body {
     line-height: 2rem;
     border: 2px solid rgb(231, 241, 231);
     border-radius: 0.4rem;
-    width: 22rem;
+    width: 24rem;
 }
 
 .about-me-card:hover {
@@ -354,43 +350,55 @@ body {
 #projects {
     position: relative;
     min-height: 100vh;
-    margin: 15rem 0;
     background-color: rgb(255, 255, 255);
-    color: rgb(22, 6, 22)
-}
-
-#projects h1 {
-    font-size: 1.4rem;
-    margin: -13rem 0 0 0;
-    padding-top: 1rem;
-    text-align: center;
-}
-.line {
-    height: 1rem;
-    border-bottom: 2px solid rgb(39, 38, 38);
-}
-.project-tile {
+    color: rgb(22, 6, 22);
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    justify-content: center;
     align-items: center;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    background-color: rgb(212, 162, 212);
-    border: 2px solid rgb(39, 38, 38);
-    margin: 1rem;
+.projects-heading {
+    margin-top: 1rem;
 }
 
-.img {
-    width: 100%;
+.project-text {
+    margin-top: 0.7rem;
+    text-decoration: none;
+    color: rgb(22, 6, 22);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.projects-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-text:hover {
+    color: rgb(166, 30, 207);
+}
+
+.projects {
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(22, 6, 22);
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+
+.pwy-1 {
+    width: 20rem;
     height: 20rem;
 }
 
+.pwy-2 {
+    width: 22rem;
+    height: 14.3rem;
+}
+
+.projects:hover {
+    transform: scale(1.04);
+}
 
 #profiles {
     width: 100vw;
@@ -401,14 +409,19 @@ body {
     margin-top: 20rem;
 }
 
-.profile-info h1 {
+.profile-heading {
     text-align: center;
     color: rgb(212, 162, 212);
     margin-bottom: 2rem;
 }
+
+.profile-heading:hover {
+    color: rgb(250, 236, 250);
+}
+
 .profile-info {
     width: 100%;
-    background-color: black;
+    background-color: rgb(122, 18, 126);
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -422,12 +435,26 @@ body {
     margin-right: 1rem;
     padding: 2rem;
 }
+
+.profile-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0.3rem;
+    margin-right: 1rem;
+}
+
+.profile-link:hover {
+    background-color: white;
+    color: rgb(22, 6, 22);
+    border-radius: 0.3rem;
+}
+
 .pajamas--github {
     display: inline-block;
     width: 1em;
     height: 1em;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584c.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076c-.343-.93-.881-1.175-.881-1.175c-.734-.489.048-.489.048-.489c.783.049 1.224.832 1.224.832c.734 1.223 1.859.88 2.3.685c.048-.538.293-.88.489-1.076c-1.762-.196-3.621-.881-3.621-3.964c0-.88.293-1.566.832-2.153c-.05-.147-.343-.978.098-2.055c0 0 .685-.196 2.201.832c.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832c.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915c.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.98 7.98 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0' clip-rule='evenodd'/%3E%3C/svg%3E");
-    background-color: rgb(212, 162, 212);
+    background-color: rgb(250, 236, 250);
     -webkit-mask-image: var(--svg);
     mask-image: var(--svg);
     -webkit-mask-repeat: no-repeat;
@@ -483,7 +510,7 @@ body {
     }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 450px) {
     .about-me-card {
         max-width: 22rem;
     }
@@ -569,7 +596,7 @@ body {
 
     .about-me-card {
         flex: 1;
-        width: 24rem;
+        width: 26rem;
     }
 
     .cps-card {

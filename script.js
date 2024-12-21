@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
             // Set card width dynamically based on screen size
             if (window.innerWidth >= 468) {
-                cpsCard.style.width = '26rem';
+                cpsCard.style.width = '24rem';
             }else if (window.innerWidth <= 360) {
                 cpsCard.style.width = '19rem';
             } else if (window.innerWidth <= 380) {
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', () => {
         if (cpsSkills.style.display === 'block') {
             if (window.innerWidth >= 390) {
-                cpsCard.style.width = '26rem';
+                cpsCard.style.width = '22rem';
             } else if (window.innerWidth <= 360) {
                 cpsCard.style.width = '19rem';
             } else if (window.innerWidth <= 380) {
